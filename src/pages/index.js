@@ -1,15 +1,26 @@
+import {Link} from "gatsby";
 import * as React from "react";
 import Layout from "../components/layout";
-import {StaticImage} from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-      <StaticImage
-        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-      />
+      <Link
+        to="blog"
+        style={{
+          display: "inline-block",
+          color: "var(--color-primary)",
+          backgroundColor: "transparent",
+          border: "1px solid var(--color-primary)",
+          borderRadius: "4px",
+          padding: "1.25rem 1.75rem",
+          fontSize: "1rem",
+          textDecoration: "none",
+          cursor: "pointer",
+        }}
+      >
+        Blog Posts
+      </Link>
     </Layout>
   );
 };

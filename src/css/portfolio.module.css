@@ -1,0 +1,49 @@
+/* ==================
+    General Styles
+===================== */
+
+:root {
+  --color-primary: #164e63;
+  --color-primary-500: #06b6d4;
+  --color-secondary: #facc15;
+  --color-gray-dark: #111827;
+}
+
+.section {
+  margin: 96px 0;
+  line-height: 1.4;
+  color: var(--color-gray-dark);
+}
+
+.highlight {
+  color: var(--secondary);
+}
+
+/* ==================
+    About Me
+===================== */
+
+.aboutHeader {
+  color: var(--color-primary);
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+}
+
+.aboutBody {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.aboutDetails {
+  width: 100%;
+}
+
+.profileImage {
+  width: 343px;
+  margin: 0 auto;
+}
+
+.profileImage img {
+  border-radius: 50%;
+  width: 100%;
+}
